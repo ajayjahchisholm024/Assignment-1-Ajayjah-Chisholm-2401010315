@@ -1,3 +1,4 @@
+//Contact form display
 $(document).ready(function () {
     $("#Contact_form").submit(function (event) {
         event.preventDefault();
@@ -10,7 +11,7 @@ $(document).ready(function () {
     });
 });
 
-// Ticket Form
+// Ticket Form display
 const form = document.getElementById("ticket_form");
 
 if (form) {
@@ -27,6 +28,7 @@ if (form) {
     });
 }
 
+//Scroll to top
 const topButton = document.getElementById("backToTop");
 
 window.addEventListener("scroll", function () {
