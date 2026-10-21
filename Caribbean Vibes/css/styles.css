@@ -1,0 +1,80 @@
+
+:root {
+    --brand: #174a8b;
+    --brand-hover: darkgreen;
+    --focus: #a53a13;
+    --ocean-blue: #00BFFF;
+    --island-green: #168447;
+    --dark-background: #172B35;
+}
+
+section{
+    padding: 1%;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+a {
+color: var(--brand);
+text-underline-offset: 0.2em;
+text-decoration: none;
+color: white;
+}
+a:hover {
+color: var(--brand-hover);
+text-decoration-thickness: 0.15em;
+}
+a:focus-visible,
+main:focus {
+outline: 3px solid var(--focus);
+outline-offset: 4px;
+}
+
+body {
+    background-color: var(--dark-background);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+h1{
+    color: green;
+    text-decoration: underline;
+font-size: 50px;}
+
+h2 {
+    color: yellow;
+}
+
+.artist_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* Make sure it auto fits for all devices */
+    gap: 20px;
+    text-align: center;
+}
+#concert img {
+    height: 500px;
+    padding: 5%;
+    max-width: 50%;
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
+
+button {
+    background-color: var(--island-green);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #006B59;
+}
